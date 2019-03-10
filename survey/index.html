@@ -13,7 +13,8 @@
         <label for="name" id="name-label">Name:</label><input id="name" type="text" placeholder="Please enter your name">
         <label for="email" id="email-label">Email:</label><input id="email" type="email" placeholder="Please enter your email address">
         <label for="number" id="number-label">Number:</label><input id="number" type="number" min="0" max="42" placeholder="Please enter a number">
-        <div class="rightTab">
+        <div>
+            <!-- User Story #12: Inside the form element, I can select an option from a dropdown -->
             <select id="dropdown">
                 <option value="">
                     Select an option
@@ -36,19 +37,44 @@
             </select>
         </div>
 
+        <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons -->
         <div class="form-group">
             <div class="labels">
                 <label for="userRating">How likely is that you would recommend this survey to a friend?</label>
             </div>
             <div class="rightTab">
-                <ul style="list-style: none;" id="userRating">
-                    <li class="radio"><label><input class="userRatings" name="radio-buttons" type="radio" value="1">I don't have any friends</label></li>
-                    <li class="radio"><label><input class="userRatings" name="radio-buttons" type="radio" value="2">My friends don't like surveys</label></li>
-                    <li class="radio"><label><input class="userRatings" name="radio-buttons" type="radio" value="3">Not sure if my friends like surveys</label></li>
+                <ul id="userRating">
+                    <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="1">I don't have any friends</label></li>
+                    <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="2">My friends don't like surveys</label></li>
+                    <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="3">Not sure if my friends like surveys</label></li>
                 </ul>
             </div>
         </div>
 
+        <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes -->
+        <div style="list-style: none; margin-left: 2em">
+            <div class="col-lg-4">
+                <ul id="improve">
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="1">Need more surveys</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="2">Need fewer surveys</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="3">Need surveys about surveys</label></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="4">Surveys need to be prettier</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="5">Surveys need to be anonymous</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="6">Surveys need to be on paper</label></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="7">Need more web surveys</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="8">Survey meetups</label></li>
+                    <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="9">Survey quesionnaires</label></li>
+                </ul>
+            </div>
+        </div>
     </form>
 </body>
 </html>
