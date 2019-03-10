@@ -1,9 +1,11 @@
 input[type="radio"]{
-    vertical-align: middle;
-  }
-  
-  input[type="checkbox"]{
-    vertical-align: middle;
-  }
-  
+    vertical-align: top;
+}
 
+input[type="checkbox"]{
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+}
