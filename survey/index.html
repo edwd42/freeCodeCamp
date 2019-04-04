@@ -1,119 +1,167 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
-    <title>fCC Survey</title>
-
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="style.css"> -->
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            <!-- <br> -->
-            <h1 id="form_title">ACME Survey Company</h1>
-            <br>
-            <h2 id="description">Please complete the following survey</h2><br>
-            <!-- <br> -->
-        </div>
-        <div>
-            <div class="d2">
-                <label for="name" id="name-label">Name:</label>
-            </div>
-            <div class="d3">
-                <input id="name" type="text" placeholder="Please enter your name">
-            </div>
-        </div>
-<!-- 
-                <div class="d4">
-                    <label for="email" id="email-label">Email:</label>
+	
+	<h1 id="title"><strong>ACME Survey Company</strong></h1>
+
+	<div id="main">
+	  <p id="description">Please complete the following survey.</p>
+	  <form action="" id="survey-form">
+	    <div class="row">
+	      <div class="left-column">
+	        <label for="name">Name:</label>
+	      </div>
+	      <div class="right-column">
+	        <input type="text" id="name" placeholder="Enter your name">
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="left-column">
+	        <label for="email">Email:</label>
+	      </div>
+	      <div class="right-column">
+	        <input type="email" id="email" placeholder="Please enter your Email">
+	      </div>
+	    </div>
+        
+        <div class="row">
+                <div class="left-column">
+                    <label for="number">How many surveys do you fill in each week?</label> 
                 </div>
-                <div class="d5">
-                <input id="email" type="email" placeholder="Please enter your email address">
-                </div> -->
-
-                <!-- <div class="col-xs-8 col-sm-6">
-                    <label for="number" id="number-label">Number:</label>
+                <div class="right-column">
+                    <input class="form-control" id="number" max="1000" min="0" name="number" placeholder="Please enter a number" required="" type="number">
                 </div>
-                <div class="col-xs-6 col-sm-6">        
-                        <input id="number" type="number" min="0" max="42" placeholder="Please enter a number">
-                <div> -->
-            <!-- <div> -->
-
-
-                        <!-- User Story #12: Inside the form element, I can select an option from a dropdown -->
-                    <!-- <div class="row">
-                        <select id="dropdown">
-                            <option value="">
-                                Select an option
-                            </option>
-                            <option value="1">
-                                I love surveys
-                            </option>
-                            <option value="2">
-                                I'll fill it in for a free beer
-                            </option>
-                            <option value="3">
-                                I dream of surveys
-                            </option>
-                            <option value="4">
-                                I hate surveys
-                            </option>
-                            <option value="5">
-                                Other
-                            </option>
-                        </select>
-                    </div> -->
-
-                    <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons -->
-                    <!-- <div class="form-group">
-                        <div class="labels">
-                            <label for="userRating">How likely is that you would recommend this survey to a friend?</label>
-                        </div>
-                        <div class="rightTab">
-                            <ul id="userRating">
-                                <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="1">I don't have any friends</label></li>
-                                <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="2">My friends don't like surveys</label></li>
-                                <li class="radio"><label><input class="userRatings" name="user-rating" type="radio" value="3">Not sure if my friends like surveys</label></li>
-                            </ul>
-                        </div>
-                    </div> -->
-
-                    <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes -->
-                    <!-- <div style="list-style: none; margin-left: 2em">
-                        <div class="col-lg-4">
-                            <ul id="improve">
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="1">Need more surveys</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="2">Need fewer surveys</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="3">Need surveys about surveys</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <ul>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="4">Surveys need to be prettier</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="5">Surveys need to be anonymous</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="6">Surveys need to be on paper</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <ul>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="7">Need more web surveys</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="8">Survey meetups</label></li>
-                                <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="9">Survey quesionnaires</label></li>
-                            </ul>
-                        </div>
-                    </div> -->
-
-                    <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
-                    <!-- <div class="labels">
-                            <label for="comments">Any Comments or Suggestions?</label>
-                        </div>
-                        <div>
-                            <textarea class="input-field" id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
-                        </div>
-                    </div> -->
-                    <!-- <button id="submit" type="submit">Submit</button> -->
         </div>
+	    
+	    <div class="row">
+	      <div class="left-column">
+                <label for="dropdown">Which option best describes your current interest in yet another survey?</label>
+	      </div>
+	      <div class="right-column">
+                <select class="dropdown" id="dropdown" name="currentInt">
+                    <option value="">
+                        Select an option
+                    </option>
+                    <option value="student">
+                        I love surveys
+                    </option>
+                    <option value="job">
+                        I'll fill it in for a free beer
+                    </option>
+                    <option value="learner">
+                        I dream of surveys
+                    </option>
+                    <option value="preferNo">
+                        I hate surveys
+                    </option>
+                    <option value="other">
+                        Other
+                    </option>
+                </select> 
+	      </div>
+	    </div>
+	    
+	    
+	    <div class="row">
+	      <div class="left-column">
+                <label for="user-rating">How likely is that you would recommend this survey to a friend?</label>
+	      </div>
+	      <div class="right-column">
+				<ul id="user-rating">
+                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="1">I don't have any friends</label></li>
+                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="2">My friends don't like surveys</label></li>
+                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="3">Not sure if my friends like surveys</label></li>
+                </ul>
+	      </div>
+	    </div>
+	    
+	    
+
+
+	    <div class="row">
+	      <div class="left-column">
+                <label for="most-like">What do you like most about surveys?</label>
+	      </div>
+	      <div class="right-column">
+	        <div id="checkboxes">
+                <select class="dropdown" id="most-like" name="mostLike">
+                    <option disabled selected value="">
+                        Select an option
+                    </option>
+                    <option value="think">
+                        They make me think
+                    </option>
+                    <option value="smile">
+                        They make me smile
+                    </option>
+                    <option value="express">
+                        I love to express my opinion
+                    </option>
+                    <option value="nothing">
+                        Nothing
+                    </option>
+                </select>
+	        </div>
+	      </div>
+	    </div>
+	    
+        
+        <div class="row grid-container">
+                <label for="improve">Things that should be improved in the future (Check all that apply):</label>
+        </div>
+	    <div class="grid-container article columns">
+            <ul id="improve">
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="1">Need more surveys</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="2">Need fewer surveys</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="3">Need surveys about surveys</label></li>
+ 
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="4">Surveys need to be prettier</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="5">Surveys need to be anonymous</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="6">Surveys need to be on paper</label></li>
+         
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="7">Need more web surveys</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="8">Need survey meetups</label></li>
+                <li class="checkbox grid-item column"><label><input class="userRatings" name="prefer" type="checkbox" value="9">Need survey quesionnaires</label></li>
+            </ul>
+        </div><br>
+
+	    <div class="row">
+	      <!-- <div class="left-column"> -->
+	        <p>Any Comments or Suggestions?</p>
+	      </div>
+	      <div class="row">
+	        <textarea id="comments" rows="4" placeholder="Please enter your comments here."></textarea>
+	      </div>
+	    <!-- </div> -->
+	    
+	    <div id="row">
+	      <button id="submit">Submit</button>
+	    </div>
+	    
+	  </form>
+
     </div>
+    <div class="footer">
+        <p>&copy; 2017 Edward Dupre &middot; <a href="https://edwd42.github.io/my_portfolio/">Back to My Portfolio</a></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $("#submit").click(function(){
+                    if($("#name").val() != "" && $("#email").val() != "" && $("#number").val() != ""){
+                alert("Thank you for taking the survey.");
+                    }
+            }); 
+                document.getElementById("survey-form").reset();
+        });
+     </script> <!-- custom styles to override bootstrap -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </body>
 </html>
