@@ -74,11 +74,17 @@
                 <label for="user-rating">How likely is that you would recommend this survey to a friend?</label>
 	      </div>
 	      <div class="right-column">
-				<ul id="user-rating">
-                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="1">I don't have any friends</label></li>
-                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="2">My friends don't like surveys</label></li>
-                    <li class="radio"><label><input class="user-ratings" name="radio-buttons" type="radio" value="3">Not sure if my friends like surveys</label></li>
-                </ul>
+                <!-- <div class="grid-container article columns"> -->
+                    <!-- <ul id="user-rating">
+                        <li class="radio grid-item column"><label><input class="user-ratings" name="radio-buttons" type="radio" value="1">I don't have any friends</label></li>
+                        <li class="radio grid-item column"><label><input class="user-ratings" name="radio-buttons" type="radio" value="2">My friends don't like surveys</label></li>
+                        <li class="radio grid-item column"><label><input class="user-ratings" name="radio-buttons" type="radio" value="3">Not sure if my friends like surveys</label></li>
+                    </ul> -->
+                <div class="fieldgroup">
+                    <input class="user-ratings" name="radio-buttons" type="radio" id="0" value="0"><label for="0">I don't have any friends</label>
+                    <input class="user-ratings" name="radio-buttons" type="radio" id="1" value="1"><label for="1">My friends don't like surveys</label>
+                    <input class="user-ratings" name="radio-buttons" type="radio" id="2" value="2"><label for="2">Not sure if my friends like surveys</label>
+                </div>  
 	      </div>
 	    </div>
 	    
