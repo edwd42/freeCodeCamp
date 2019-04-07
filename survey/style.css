@@ -50,8 +50,6 @@ body {
   
   .right-column {
     display: block; 
-    /* float: left;   */
-    /* text-align: left;  */
     width: 49%; 
     margin-left: 10px;
   }
@@ -83,10 +81,10 @@ body {
     width: 2%; 
   }
   
-  #btn-row {
+  /* #btn-row {
     display: block;
     padding: 100px; 
-  }
+  } */
   
   #submit {
     background-color: #758AB6; 

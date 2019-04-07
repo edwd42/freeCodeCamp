@@ -1,3 +1,14 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,25 +26,25 @@
 	  <form action="" id="survey-form">
 	    <div class="row">
 	      <div class="left-column">
-	        <label for="name">Name:</label>
+	        <label for="name" id="name-label">Name:</label>
 	      </div>
 	      <div class="right-column">
-	        <input type="text" id="name" placeholder="Enter your name">
+	        <input type="text" id="name" placeholder="Enter your name" required>
 	      </div>
 	    </div>
 
 	    <div class="row">
 	      <div class="left-column">
-	        <label for="email">Email:</label>
+	        <label for="email" id="email-label">Email:</label>
 	      </div>
 	      <div class="right-column">
-	        <input type="email" id="email" placeholder="Please enter your Email">
+	        <input type="email" id="email" placeholder="Please enter your Email" required>
 	      </div>
 	    </div>
         
         <div class="row">
                 <div class="left-column">
-                    <label for="number">How many surveys do you fill in each week?</label> 
+                    <label for="number" id="number-label">How many surveys do you fill in each week?</label> 
                 </div>
                 <div class="right-column">
                     <input class="form-control" id="number" max="1000" min="0" name="number" placeholder="Please enter a number" required="" type="number">
