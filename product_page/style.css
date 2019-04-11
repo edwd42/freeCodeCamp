@@ -111,3 +111,14 @@ body {
 .footer {
   grid-area: footer;
 }
+
+/* flex container */
+.pricing-grid {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.plan {
+  flex: 1;
+}
