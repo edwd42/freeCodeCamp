@@ -6,39 +6,43 @@
 <title>fCC Product Landing Page</title>
 </head>
 <body>
-
+    
     <header id="header" class="header">
-        <img class="logo" id="header-img" src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="freeCodeCamp logo" />
-        <nav id="nav-bar" class="header-right">
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="#about">About</a>
-        </nav>
+        <div>
+            <img class="logo" id="header-img" src="logo.png" alt="freeCodeCamp logo" />
+            <nav id="nav-bar" class="header-right">
+                <a class="nav-link" href="#hero">Home</a>
+                <a class="nav-link" href="#form-section">Contact</a>
+                <a class="nav-link" href="#video">About</a>
+            </nav>
+        </div>
     </header>
     
-    <section id="main">
-        <div class="box hero">
-            <h1>Algos R Us</h1>
-            <h2>Here at CareerDevs, students focus on algorithms and data structures.</h2>
+    <div id="hero" class="hero">
+        <h1><strong>Algos <span class="reversed">'R'</span> Us</strong></h1>
+        <h2>Here at CareerDevs, students focus on algorithms and data structures.</h2>
+        <p>In its most general sense, an algorithm is any set of detailed instructions which results in a predictable end-state from a known beginning. Algorithms are only as good as the instructions given, however, and the result will be incorrect if the algorithm is not properly defined.</p>
+        <p>A common example of an algorithm would be instructions for assembling a model airplane. Given the starting set of a number of marked pieces, one can follow the instructions given to result in a predictable end-state: the completed airplane. Misprints in the instructions, or a failure to properly follow a step, will result in a faulty end product.</p>
+        <p>A computer program is another pervasive example. Every computer program is simply a series of instructions, which may vary in complexity, and is listed in a specific order, designed to perform a specific task. Mathematics also uses algorithms to solve equations by hand, without the use of a calculator. One last example is the human brain: most conceptions of the human brain define all behavior — from the acquisition of food to falling in love — as the result of a complex algorithm.</p>
+        <small>source: https://www.wisegeek.com/what-is-an-algorithm.htm</small>
+    </div>
 
-        </div>
-        <div class="box content">
-            <div class="iframe-container">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/h86RzlyHfUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="box img-sidebar">
-            <span>image goes here</span>
-        </div>
+    <!-- flex container fmain -->
+    <section id="video" class="video">
+        <!-- <div class="fvideo"> -->
+            <!-- https://www.youtube.com/embed/h86RzlyHfUE  width="560" height="315" -->
+            <iframe src="https://www.youtube.com/embed/h86RzlyHfUE" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- </div> -->
     </section>
+    <!-- end flex container fmain -->
 
-    <!-- flex container -->
-    <section class="pricing-grid">
+    <!-- flex prices container -->
+    <section class="prices-container">
         <div class="plan plan1">
             <h2>Basic Package</h2>
-            <span>
+            <span class="price">
                 <strong>1</strong> 
-                <img class="bitcoin_logo" src="#" alt="bitcoin logo">
+                <img class="bitcoin_logo" src="bitcoin_logo.png" alt="bitcoin logo">
             </span>
             <ul class="features">
                 <li>Lorem ipsum.</li>
@@ -54,9 +58,9 @@
 
         <div class="plan plan2">
             <h2>If You Watch</h2>
-            <span>
+            <span class="price">
                 <strong>2</strong> 
-                <img class="bitcoin_logo" src="#" alt="bitcoin logo">
+                <img class="bitcoin_logo" src="bitcoin_logo.png" alt="bitcoin logo">
             </span>
             <ul class="features">
                 <li>Lorem ipsum.</li>
@@ -69,9 +73,9 @@
 
         <div class="plan plan3">
             <h2>If You Help</h2>
-            <span>
+            <span class="price">
                 <strong>4</strong> 
-                <img class="bitcoin_logo" src="#" alt="bitcoin logo">
+                <img class="bitcoin_logo" src="bitcoin_logo.png" alt="bitcoin logo">
             </span>
             <ul class="features">
                 <li>Lorem ipsum.</li>
@@ -81,10 +85,20 @@
             </ul>
             <button class="btn">Select</button>
         </div>
+    </section>
 
+    <section id="form-section" class="form">
+        <span id="form-span">We'd love to hear from you.  Please enter your email below.</span>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" placeholder="Please enter your email address" required/>
+            <input id="submit" type="submit" value="Submit" class="btn"></input>
+        </form>
     </section>
 
         
-    <div class="box footer">Footer</div>
+    <!-- FOOTER -->
+	<footer class="footer">
+        <p id="footer">&copy; 2019 Edward Dupre &middot; <a href="https://edwd42.github.io/my_portfolio" target="_blank">Back to My Portfolio</a> &middot; <a href="#hero">Back to top</a></p>
+    </footer>
 </body>
 </html> 
