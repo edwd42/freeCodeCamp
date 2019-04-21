@@ -7,13 +7,13 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>The Tech Docs</header>
+        <header>The ADD Tech Docs</header>
         <ul> 
             <a class="nav-link" href="#introduction"><li>Introduction</li></a>
             <a class="nav-link" href="#algorithms"><li>Algorithms</li></a>
-            <a class="nav-link" href="#datastructures"><li>Data Structures</li></a>
-            <a class="nav-link" href="#designpatterns"><li>Design Patterns</li></a>
-            <a class="nav-link" href="#languages"><li>Resources</li></a>
+            <a class="nav-link" href="#data_structures"><li>Data Structures</li></a>
+            <a class="nav-link" href="#design_patterns"><li>Design Patterns</li></a>
+            <a class="nav-link" href="#resources"><li>Resources</li></a>
         </ul>
     </nav>
 
@@ -22,9 +22,10 @@
         <section class="main-section" id="introduction">
             <header>Introduction</header>
             <article>  
-                <p>This <strong>freeCodeCamp Technical Documentation project</strong> is the beginning of my programming documentation journey.  This project is simply a homework assignment.  Most of what I'm writing here is my own interpertation of material I learned from my instructors <a href="https://twitter.com/ArnellMilhouse" target="_blank">Arnell Milhouse</a> and <a href="https://twitter.com/Cliff3CS" target="_blank">Cliff Choinier</a> (and with the help of my fellow students) at <a href="http://careerdevs.com/" target="_blank">CareerDevs Computer Science University</a> (big shout-out!), read, videos and tutorials, and the product of my own understanding of subject matter after wrestling with certain concepts over time.</p>
+                <p>This <strong>freeCodeCamp Technical Documentation <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page" target="_blank">project</a></strong> is the beginning of my programming documentation journey.  This project is simply a homework assignment.  Most of what I'm writing here is my own interpertation of material I learned from my instructors <a href="https://twitter.com/ArnellMilhouse" target="_blank">Arnell Milhouse</a> and <a href="https://twitter.com/Cliff3CS" target="_blank">Cliff Choinier</a> (and with the help of my fellow students) at <a href="http://careerdevs.com/" target="_blank">CareerDevs Computer Science University</a> (big shout-out!), read, videos and tutorials, and the product of my own understanding of subject matter after wrestling with certain concepts over time.</p>
             </article>
         </section>
+
         <section class="main-section" id="algorithms">
             <header>Algorithms</header>
             <article>  
@@ -39,7 +40,47 @@
                     <li>Insertion Sort</li>
                 </ul>
                 </p><br>
-                <p>In computer science, Big O is useful for describing the analysis of algorithms, to classify them according to how their running time or space requirements grow as the input size grows.  The letter O is used because the growth rate of a function is also referred to as the <strong>order of the function</strong>.<small><a href="#1">[1]</a></small>  
+                <p>Let's walk through an InsertionSort sorting algorithm.  While it is much less efficienet on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort, InsertionSort is simple and quite efficient for small data sets.  The time complexity of this algorithm, at worst case, is O(n²).  However, if your list is sorted or nearly so, it can be O(n) in a best case scenario. 
+                </p>
+                <br>
+                <p style="background-color:rgb(201, 238, 250)">A little twisted logic I picked up somewhere recently regarding comments:
+                Most programmers think you put comments to tell other programmers (or your future self) what your code means. Those comments are your algorithm.  The code is there to tell the computer what your comments mean.  Think about it. ;)
+                </p>
+                <br>
+                <section class="indent-me">
+                    <code>
+                        // First, declare the function and pass it an array<br>
+                        function insertionSort(array) {
+                    </code>
+                    <br><br>
+                    <code>
+                        // Loop through array<br>
+                        for(var i = 1, j; i < array.length; i++) {
+                    </code>
+                    <br><br>
+                    <code>
+                        // Create temp variable for current element<br>
+                        var temp = array[i];
+                    </code>        
+                    <br><br>     
+                    <code>
+                        // Create a variable j and set equal to previous element's index<br>
+                        // Loop backwards while index >= 0 and current element > temp var<br>
+                        for(var j = i - 1; j >= 0 && array[j] > temp; j--) {
+                    </code> 
+                    <br><br>           
+                    <code>
+                        // Set next element equal to current element<br>
+                        array[j+1] = array[j];
+                    </code>
+                    <br><br>
+                    <code>
+                        // Set next element equal to temp<br>
+                        array[j+1] = temp;
+                    </code>
+                </section>
+                <br>
+                <p>In computer science, <strong>Big O</strong> is useful for describing the analysis of algorithms, to classify them according to how their running time or space requirements grow as the input size grows.  The letter O is used because the growth rate of a function is also referred to as the <strong>order of the function</strong>.<small><a href="#1">[1]</a></small>  
                 </p><br>
                 <p>Examples of Big O notation inculde:
                         <br><br>
@@ -48,17 +89,17 @@
                             <li>O(log n) known as logarithmic time</li>
                             <li>O(n) or linear time</li>
                             <li>O(n log n) or linearithmic, loglinear or quasilinear time</li>
-                            <li>O(n **2) O of n squared or quadratic time</li>
+                            <li>O(n**2) O of n squared or quadratic time</li>
                         </ul>
                         </p><br>
                 </p>
             </article>
         </section>
+
         <section class="main-section" id="data_structures">
             <header>Data Structures</header>
             <article>  
-                <p>A data structure is a way of organizing data so that it can be stored and retrieved efficiently.  Knowledge about the relationship between data items allows for the design of efficient algorithms for the manipulation of data.</p>
-                <p>Examples of data structures include:
+                <p>A data structure is a way of organizing data so that it can be stored and retrieved efficiently.  Knowledge about the relationship between data items allows for the design of efficient algorithms for the manipulation of data.  Examples of data structures include:
                         <br><br>
                         <ul class="indent-me">
                             <li>Arrays</li>
@@ -70,16 +111,22 @@
                 </p>
             </article>
         </section>
+
         <section class="main-section" id="design_patterns">
             <header>Design Patterns</header>
             <article>  
-                <p>some text here</p>
+                <p>In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design.<small><a href="#2">[2]</a></small>  There's not a lot I can say about design patterns that hasn't been said in the book "Design Patterns: Elements of Reusable Object-Oriented Software" by the "Gang of Four", Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994).<small><a href="#3">[3]</a></small></p><br>
+                <p>However, I can illustrate how I've applied various design patterns in my own projects and assignments.  <a href="https://github.com/edwd42/ClassroomCode/tree/master/compsci/observer_pattern" target="_blank">Here's an example</a> of using the Observer Pattern in a simple react app where the characters typed into a text input box appear immediately in the associated span element.</p>
             </article>
         </section>
-        <section class="main-section" id="languages">
+
+        <section class="main-section" id="resources">
             <header>Resources</header>
             <article>  
                 <p id="1">1. <a href="https://en.wikipedia.org/wiki/Big_O_notation" target="_blank">Wikipedia</a> Big O notation</p>
+                <p id="2">2. <a href="https://en.wikipedia.org/wiki/Software_design_pattern" target="_blank">Wikipedia</a> Software design pattern</p>
+                <p id="3">3. <a href="https://en.wikipedia.org/wiki/Design_Patterns" target="_blank">Wikipedia</a> Design Patterns: Elements of Reusable Object-Oriented Software (1994)</p>
+                <p id="4">4. <a href="https://initjs.org/insertion-sort-in-javascript-6c48563b4643" target="_blank">Michael Mitrakos</a></p>
             </article>
         </section>
 
