@@ -70,6 +70,10 @@
     /* font-size:0.96em; */
   }
 
+.code {
+    background-color: #eee;
+}
+
 .footer {
     position: absolute;
     bottom: 0;

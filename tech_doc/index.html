@@ -7,7 +7,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>The ADD Tech Docs</header>
+        <header>The ADS&DP Docs</header>
         <ul> 
             <a class="nav-link" href="#introduction"><li>Introduction</li></a>
             <a class="nav-link" href="#algorithms"><li>Algorithms</li></a>
@@ -22,14 +22,14 @@
         <section class="main-section" id="introduction">
             <header>Introduction</header>
             <article>  
-                <p>This <strong>freeCodeCamp Technical Documentation <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page" target="_blank">project</a></strong> is the beginning of my programming documentation journey.  This project is simply a homework assignment.  Most of what I'm writing here is my own interpertation of material I learned from my instructors <a href="https://twitter.com/ArnellMilhouse" target="_blank">Arnell Milhouse</a> and <a href="https://twitter.com/Cliff3CS" target="_blank">Cliff Choinier</a> (and with the help of my fellow students) at <a href="http://careerdevs.com/" target="_blank">CareerDevs Computer Science University</a> (big shout-out!), read, videos and tutorials, and the product of my own understanding of subject matter after wrestling with certain concepts over time.</p>
+                <p>This <strong>freeCodeCamp Technical Documentation <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page" target="_blank">project</a></strong> is the beginning of my programming documentation journey.  This project is simply a homework assignment.  Most of what I'm writing here is my own interpertation of material I learned from my awesome instructors <a href="https://twitter.com/ArnellMilhouse" target="_blank">Arnell Milhouse</a> and <a href="https://twitter.com/Cliff3CS" target="_blank">Cliff Choinier</a> (and with the help of my fellow students) at <a href="http://careerdevs.com/" target="_blank">CareerDevs Computer Science University</a> (big shout-out!), read, videos and tutorials, and the product of my own understanding of subject matter after wrestling with certain concepts over time.</p>
             </article>
         </section>
 
         <section class="main-section" id="algorithms">
             <header>Algorithms</header>
             <article>  
-                <p>An algorithm is a set of step-by-step instructions that describe what to do and how to do it.  People use algorithms every day wether they are aware of it or not.  Simple things like tying your shoes and making a cup of coffee involve an algorithm in some way, but most times people don't even know it or think about it.  Something as simple as getting to work every day could involve different algorithms, depending on the distance, weather, cost, and mode of transportation.</p><br>
+                <p>An algorithm is a set of step-by-step instructions that describe what to do and how to do it.  People use algorithms every day wether they are aware of it or not.  Simple things like tying your shoes and making a cup of coffee involve an algorithm in some way, but most times people don't even know it or even think about it.  Something as simple as getting to work every day could involve different algorithms, depending on the distance, weather, cost, and mode of transportation.</p><br>
                 <p>In computer science, there are many different ways to accomplish a programming task, each with it's own cost in terms of speed and memory requirements.  Computers spend a lot of time sorting data, and a lot of research has produced a lot of different algorithms used in sorting, including:
                 <br><br>
                 <ul class="indent-me">
@@ -40,14 +40,11 @@
                     <li>Insertion Sort</li>
                 </ul>
                 </p><br>
-                <p>Let's walk through an InsertionSort sorting algorithm.  While it is much less efficienet on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort, InsertionSort is simple and quite efficient for small data sets.  The time complexity of this algorithm, at worst case, is O(n²).  However, if your list is sorted or nearly so, it can be O(n) in a best case scenario. 
+                <p>Let's walk through an InsertionSort sorting algorithm.  While it is much less efficienet on large lists than more advanced algorithms such as quicksort, heapsort, or mergesort, InsertionSort is simple and quite efficient for small data sets.  The time complexity of this algorithm, at worst case, is O(n²).  However, if your list is sorted or nearly so, it can be O(n) in a best case scenario. 
                 </p>
+                
                 <br>
-                <p style="background-color:rgb(201, 238, 250)">A little twisted logic I picked up somewhere recently regarding comments:
-                Most programmers think you put comments to tell other programmers (or your future self) what your code means. Those comments are your algorithm.  The code is there to tell the computer what your comments mean.  Think about it. ;)
-                </p>
-                <br>
-                <section class="indent-me">
+                <section class="indent-me code">
                     <code>
                         // First, declare the function and pass it an array<br>
                         function insertionSort(array) {
@@ -55,7 +52,7 @@
                     <br><br>
                     <code>
                         // Loop through array<br>
-                        for(var i = 1, j; i < array.length; i++) {
+                        for(var i = 1, j; i < array.length; i++)
                     </code>
                     <br><br>
                     <code>
@@ -80,6 +77,10 @@
                     </code>
                 </section>
                 <br>
+                <p style="background-color:rgb(201, 238, 250)">A little twisted logic I picked up somewhere recently regarding comments:
+                Most programmers think you put comments to tell other programmers (or your future self) what your code means. Those comments can be your algorithm.  The code is there to tell the computer what your comments mean.  Think about it. ;)
+                </p>
+                <br>
                 <p>In computer science, <strong>Big O</strong> is useful for describing the analysis of algorithms, to classify them according to how their running time or space requirements grow as the input size grows.  The letter O is used because the growth rate of a function is also referred to as the <strong>order of the function</strong>.<small><a href="#1">[1]</a></small>  
                 </p><br>
                 <p>Examples of Big O notation inculde:
@@ -98,25 +99,54 @@
 
         <section class="main-section" id="data_structures">
             <header>Data Structures</header>
-            <article>  
-                <p>A data structure is a way of organizing data so that it can be stored and retrieved efficiently.  Knowledge about the relationship between data items allows for the design of efficient algorithms for the manipulation of data.  Examples of data structures include:
-                        <br><br>
+            <article>
+                <p>
+                “[T]he difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.”!-- LinusTorvalds
+                </p>
+                <br>
+                <p>A data structure is a way of organizing data so that it can be stored and retrieved efficiently.  Knowledge about the relationship between data items allows for the design of efficient algorithms for the manipulation of data.  Different types of data structures are suited to different kinds of applications.  Examples of data structures include:
+                    <br><br>
+                    <ul class="indent-me">
+                        <li>Arrays</li>
+                        <li>Linked Lists</li>
+                        <li>Stacks</li>
+                        <li>Queues</li>
+                        <li>Graphs</li>
+                    </ul>
+                </p>
+                <br>
+                <p>
+                    <ul class="indent-me">
+                        <li>An <span style="font-weight:bold">array</span> is a number of elements in a specific order, typically all of the same type (depending on the language, individual elements may either all be forced to be the same type, or may be of almost any type). Elements are accessed using an integer index to specify which element is required. Typical implementations allocate contiguous memory words for the elements of arrays (but this is not always a necessity). Arrays may be fixed-length or resizable.</li>
+                        <br>
+                        <li>A <span style="font-weight:bold">linked list</span> (also just called list) is a linear collection of data elements of any type, called nodes, where each node has itself a value, and points to the next node in the linked list. The principal advantage of a linked list over an array, is that values can always be efficiently inserted and removed without relocating the rest of the list. Certain other operations, such as random access to a certain element, are however slower on lists than on arrays.</li>
+                        <br>
+                        <li>An <span style="font-weight:bold">object</span> is a data structure that contains data fields, like a record does, as well as various methods which operate on the data contents. An object is an in-memory instance of a class from a taxonomy. In the context of object-oriented programming, records are known as plain old data structures to distinguish them from objects.
+                            <small><a href="#5">[5]</a></small> 
+                        </li>
+                        <br>
+                        <li>A <span style="font-weight:bold">graph</span> data structure is a collection of nodes that have data and are connected to other nodes.
+                        Graphs are commonly represented in two ways: Adjacency Matrix and Adjacency List
+                    </ul>
+                    <br>
+                    <article  class="indent-me">
+                        <span style="font-weight:bold">Graphs time and space complexity</span><br><br>
                         <ul class="indent-me">
-                            <li>Arrays</li>
-                            <li>Linked Lists</li>
-                            <li>Stacks</li>
-                            <li>Queues</li>
-                            <li>Graphs</li>
+                            <li>Adjacency List is faster and uses less space for sparce graphs, but is slower for dense graphs.</li>
+                            <li>Adjacency Matrix is faster for dense graphs, but uses more space.</li>
+                            <li>Adjacency Matrix is also simpler for weighted edges.</li>
                         </ul>
+                    </article>
+                    <br>
                 </p>
             </article>
         </section>
-
+        
         <section class="main-section" id="design_patterns">
             <header>Design Patterns</header>
             <article>  
                 <p>In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design.<small><a href="#2">[2]</a></small>  There's not a lot I can say about design patterns that hasn't been said in the book "Design Patterns: Elements of Reusable Object-Oriented Software" by the "Gang of Four", Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994).<small><a href="#3">[3]</a></small></p><br>
-                <p>However, I can illustrate how I've applied various design patterns in my own projects and assignments.  <a href="https://github.com/edwd42/ClassroomCode/tree/master/compsci/observer_pattern" target="_blank">Here's an example</a> of using the Observer Pattern in a simple react app where the characters typed into a text input box appear immediately in the associated span element.</p>
+                <p>However, I can illustrate how I've applied various design patterns in my own projects and coding assignments.  <a href="https://github.com/edwd42/ClassroomCode/tree/master/compsci/observer_pattern" target="_blank">Here's an example</a> of using the Observer Pattern in a simple react app where the characters typed into a text input box appear immediately in the associated span element.</p>
             </article>
         </section>
 
@@ -126,7 +156,8 @@
                 <p id="1">1. <a href="https://en.wikipedia.org/wiki/Big_O_notation" target="_blank">Wikipedia</a> Big O notation</p>
                 <p id="2">2. <a href="https://en.wikipedia.org/wiki/Software_design_pattern" target="_blank">Wikipedia</a> Software design pattern</p>
                 <p id="3">3. <a href="https://en.wikipedia.org/wiki/Design_Patterns" target="_blank">Wikipedia</a> Design Patterns: Elements of Reusable Object-Oriented Software (1994)</p>
-                <p id="4">4. <a href="https://initjs.org/insertion-sort-in-javascript-6c48563b4643" target="_blank">Michael Mitrakos</a></p>
+                <p id="4">4. <a href="https://initjs.org/insertion-sort-in-javascript-6c48563b4643" target="_blank">Michael Mitrakos</a> Implement Insertion Sort in JavaScript</p>
+                <p id="5">5. <a href="https://en.wikipedia.org/wiki/Data_structure">Wikipedia</a> Data Structures</p>
             </article>
         </section>
 
