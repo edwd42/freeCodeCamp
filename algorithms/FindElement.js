@@ -9,11 +9,11 @@
  */
 
 function findElement(arr, func) {
-    let num = false;
+    let test = false;
     for(let i = 0; i < arr.length; i++){
-      num = func(arr[i]);
-      // console.log(num);
-      if(num == true){
+      test = func(arr[i]);
+      // console.log(test);
+      if(test == true){
         // console.log(arr[i] % 2); 
         return arr[i];
       }
