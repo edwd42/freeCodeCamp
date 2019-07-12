@@ -6,14 +6,12 @@
  */
 
 function chunkArrayInGroups(arr, size) {
-    // Break it up.
-    var arr2 = [[]];
-    arr2[0] = arr.slice(0,size);
-    var loops = (arr.length / size);
-    for(let i = 1; i < loops; i++){
-        arr2[i] = arr.slice((size * i), (size * (i + 1)));
-    }
-    return arr2;
+  // Break it up.
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i += size) {
+    arr2.push(arr.slice(i, i + size));
+  }
+  return arr2;
 }
 
 console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
