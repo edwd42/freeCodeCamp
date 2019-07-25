@@ -1,7 +1,7 @@
 // https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array
 
 // the global variable
-var watchList = [
+const watchList = [
   {
     Title: "Inception",
     Year: "2010",
@@ -54,16 +54,25 @@ var watchList = [
 
 // Add your code below this line
 
-var rating = [];
-// for(var i=0; i < watchList.length; i++){
-//   rating.push({title: watchList[i]["Title"],  rating: watchList[i]["imdbRating"]});
-// }
+export const ratings = () => {
+  var rating = [];
+  for (var i = 0; i < watchList.length; i++) {
+    rating.push({
+      title: watchList[i]["Title"],
+      rating: watchList[i]["imdbRating"]
+    });
+  }
 
-rating = watchList.map(watchList => ({
-  title: watchList["Title"],
-  rating: watchList["imdbRating"]
-}));
+  console.log(rating);
 
-// Add your code above this line
+  return rating;
 
-console.log(rating);
+  // rating = watchList.map(watchList => ({
+  //   title: watchList["Title"],
+  //   rating: watchList["imdbRating"]
+  // }));
+
+  // Add your code above this line
+};
+
+console.log(ratings());
