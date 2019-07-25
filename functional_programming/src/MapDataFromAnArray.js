@@ -55,22 +55,20 @@ const watchList = [
 // Add your code below this line
 
 export const ratings = () => {
-  var rating = [];
-  for (var i = 0; i < watchList.length; i++) {
-    rating.push({
-      title: watchList[i]["Title"],
-      rating: watchList[i]["imdbRating"]
-    });
-  }
+  let rating = [];
+  // for (var i = 0; i < watchList.length; i++) {
+  //   rating.push({
+  //     title: watchList[i]["Title"],
+  //     rating: watchList[i]["imdbRating"]
+  //   });
+  // }
 
-  console.log(rating);
+  rating = watchList.map(watchList => ({
+    title: watchList["Title"],
+    rating: watchList["imdbRating"]
+  }));
 
   return rating;
-
-  // rating = watchList.map(watchList => ({
-  //   title: watchList["Title"],
-  //   rating: watchList["imdbRating"]
-  // }));
 
   // Add your code above this line
 };
