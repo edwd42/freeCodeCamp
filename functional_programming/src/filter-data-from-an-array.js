@@ -129,7 +129,7 @@ var watchList = [
 
 // Add your code below this line
 
-export const ratings2 = () => {
+export const ratings = () => {
   let filteredList = [];
 
   watchList
@@ -141,8 +141,9 @@ export const ratings2 = () => {
       });
     });
   console.log(filteredList);
+  return filteredList;
 };
 
 // Add your code above this line
 
-console.log(ratings2());
+console.log(ratings());

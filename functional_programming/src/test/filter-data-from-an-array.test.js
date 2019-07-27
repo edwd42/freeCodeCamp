@@ -3,12 +3,12 @@
  * https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array
  */
 
-import { ratings2 } from "../filter-data-from-an-array";
+import { ratings } from "../filter-data-from-an-array";
 
-const expected = [];
+const expected = [{ title: "Inception", rating: "8.8" }];
 
 describe("ratings2 function", () => {
   it("should return an array of objects", () => {
-    expect(ratings2()).toEqual(expect.arrayContaining(expected));
+    expect(ratings()).toEqual(expect.arrayContaining(expected));
   });
 });
