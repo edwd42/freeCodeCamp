@@ -4,7 +4,7 @@ import { myMap } from "../implement-map-on-a-prototype";
 
 const expected = [46];
 
-describe("ratings function", () => {
+describe("myMap function", () => {
   it("should return an array of numbers", () => {
     expect(myMap()).toEqual(expect.arrayContaining(expected));
   });
