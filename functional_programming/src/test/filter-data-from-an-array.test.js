@@ -7,7 +7,7 @@ import { ratings } from "../filter-data-from-an-array";
 
 const expected = [{ title: "Inception", rating: "8.8" }];
 
-describe("ratings2 function", () => {
+describe("ratings function", () => {
   it("should return an array of objects", () => {
     expect(ratings()).toEqual(expect.arrayContaining(expected));
   });
